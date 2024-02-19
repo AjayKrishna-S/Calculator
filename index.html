@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body onload="loadPage()">
+
+    <main  class="out-line">
+      <div class="in-line">
+        <div class="content">
+
+          <p class="js-cal-display cal-display"></p>
+
+          <div class="buttons-container">
+      
+            <button onclick="
+              clickSound()
+              updateCalculation('1')
+            ">1</button>
+
+            <button onclick="
+              clickSound()
+              updateCalculation('2')
+            ">2</button>
+
+            <button onclick="
+              clickSound()
+              updateCalculation('3') 
+            ">3</button>
+
+            <button onclick="
+              clickSound()
+              updateCalculation(' + ')
+            ">+</button>
+
+            <button onclick="
+              clickSound()
+              updateCalculation('4')
+            ">4</button>
+
+            <button onclick="
+              clickSound()
+              updateCalculation('5') 
+            ">5</button>
+
+            <button onclick="
+              clickSound()
+              updateCalculation('6')
+            ">6</button>
+
+            <button onclick="
+              clickSound()
+              updateCalculation(' - ') 
+            ">-</button>
+
+            <button onclick="
+              clickSound()
+              updateCalculation('7')
+            ">7</button>
+
+            <button onclick="
+              clickSound()
+              updateCalculation('8')
+            ">8</button>
+
+
+            <button onclick="
+              clickSound()
+              updateCalculation('9')
+            ">9</button>
+
+
+            <button onclick="
+              clickSound()
+              updateCalculation(' * ')
+            ">*</button>
+
+            <button onclick="
+              clickSound()
+              updateCalculation('0')
+            ">0</button>
+
+            <button onclick=".
+              clickSound()
+              updateCalculation('.')
+            ">.</button>
+
+            <button onclick="
+            clickSound()
+            calculation = '';
+            localStorage.setItem('calculation',calculation);
+            loadPage()
+            localStorage.removeItem(calculation);
+            ">C</button>
+
+            <button  onclick="
+              clickSound()
+              updateCalculation(' / ')
+            ">/</button>
+          </div>
+
+          <button class="equals-btn" onclick="
+            clickSound()
+            calculation = eval(calculation);
+            document.querySelector('.js-cal-display').innerHTML = calculation;
+          ">Equals</button>
+        </div>
+      </div>
+      <script src="./script.js"></script>
+    </main>
+  </body>
+</html>
